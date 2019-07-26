@@ -10,8 +10,6 @@ for (let i = 0; i < canvases.length; i++) {
 
     context.fillStyle = 'blue';
     context.fillRect(0, 0, canvas.width, canvas.height);  
-    
-    var altCard = new Card();
 
     var card = createCard(canvas);  
     cards.push(card);
@@ -22,11 +20,6 @@ function createCard(canvas) {
     const card = {
         isShowing: false,
         isMatched: false
-    }
-
-    card.isShowing = true;
-    card = {
-        isShowing: true
     }
 
     card.show = function() {
